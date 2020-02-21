@@ -30,12 +30,6 @@ class ListMoviesTableViewCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-
-        self.setCircularImageView()
-    }
-
-    func setCircularImageView() {
-        self.posterImg.layer.cornerRadius = CGFloat(15)
     }
     
     var movies: Results!{
@@ -45,11 +39,14 @@ class ListMoviesTableViewCell: UITableViewCell {
     }
     
     func configure(){
+        DispatchQueue.main.async {
+            self.posterImg.roundCorner([.topLeft, .bottomLeft], radius: 15)
+        }
+        
         posterImg.kf.indicatorType = .activity
         if let posterPath = movies.posterPath{
             posterImg.kf.setImage(with: URL(string: "\(Constants.MoviesImageUrl.moviesImageUrl)\(posterPath)"))
         }
-        
         
         titleLbl.text = movies.title
         descriptionLbl.text = movies.overview?.truncate(length: 230, trailing: "...")
