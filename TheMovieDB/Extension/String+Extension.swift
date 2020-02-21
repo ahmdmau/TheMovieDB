@@ -18,3 +18,10 @@ extension String{
         }
     }
 }
+
+public func checkNullInt(sender : Int?)-> Int{
+    if sender != nil {
+        return sender!
+    }
+    return 0
+}

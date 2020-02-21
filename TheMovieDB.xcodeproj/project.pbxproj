@@ -75,6 +75,9 @@
 		52C5063E23FF0C1800265F48 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5063D23FF0C1800265F48 /* UIView+Extension.swift */; };
 		52C5063F23FF0C1800265F48 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5063D23FF0C1800265F48 /* UIView+Extension.swift */; };
 		52C5064023FF0C1800265F48 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5063D23FF0C1800265F48 /* UIView+Extension.swift */; };
+		52C5064523FF906000265F48 /* UIScrollView+InfiniteScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C5064423FF906000265F48 /* UIScrollView+InfiniteScroll.m */; };
+		52C5064723FF90D500265F48 /* CustomInfiniteIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5064623FF90D500265F48 /* CustomInfiniteIndicator.swift */; };
+		52C5064C23FFC0D200265F48 /* UIImageview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C5064B23FFC0D200265F48 /* UIImageview+Extension.swift */; };
 		D0043C5D0EB8420384EAB15D /* Pods_TheMovieDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFBF65DDF60EFB2D675E9A0 /* Pods_TheMovieDB.framework */; };
 		E1BF4E3A2FEC126F8187D42E /* Pods_TheMovieDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC92B5F3C7EB319C3C74BA45 /* Pods_TheMovieDBTests.framework */; };
 /* End PBXBuildFile section */
@@ -134,6 +137,11 @@
 		52C5063523FF047100265F48 /* ListMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviesTableViewCell.swift; sourceTree = "<group>"; };
 		52C5063923FF089200265F48 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		52C5063D23FF0C1800265F48 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		52C5064223FF905F00265F48 /* TheMovieDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheMovieDB-Bridging-Header.h"; sourceTree = "<group>"; };
+		52C5064323FF906000265F48 /* UIScrollView+InfiniteScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+InfiniteScroll.h"; sourceTree = "<group>"; };
+		52C5064423FF906000265F48 /* UIScrollView+InfiniteScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+InfiniteScroll.m"; sourceTree = "<group>"; };
+		52C5064623FF90D500265F48 /* CustomInfiniteIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInfiniteIndicator.swift; sourceTree = "<group>"; };
+		52C5064B23FFC0D200265F48 /* UIImageview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageview+Extension.swift"; sourceTree = "<group>"; };
 		9BFBF65DDF60EFB2D675E9A0 /* Pods_TheMovieDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheMovieDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFF808EA29812B5F397A327 /* Pods-TheMovieDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMovieDBTests.debug.xcconfig"; path = "Target Support Files/Pods-TheMovieDBTests/Pods-TheMovieDBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D36A56AA3AEB590A64BEB6D9 /* Pods-TheMovieDB-TheMovieDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheMovieDB-TheMovieDBUITests.release.xcconfig"; path = "Target Support Files/Pods-TheMovieDB-TheMovieDBUITests/Pods-TheMovieDB-TheMovieDBUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -265,8 +273,10 @@
 		52C505E523FEEE1300265F48 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				52C5064123FF901D00265F48 /* TableView */,
 				52C5063923FF089200265F48 /* String+Extension.swift */,
 				52C5063D23FF0C1800265F48 /* UIView+Extension.swift */,
+				52C5064B23FFC0D200265F48 /* UIImageview+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -356,6 +366,17 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		52C5064123FF901D00265F48 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				52C5064323FF906000265F48 /* UIScrollView+InfiniteScroll.h */,
+				52C5064423FF906000265F48 /* UIScrollView+InfiniteScroll.m */,
+				52C5064223FF905F00265F48 /* TheMovieDB-Bridging-Header.h */,
+				52C5064623FF90D500265F48 /* CustomInfiniteIndicator.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		E6D6087F5405E5F6C4DAD405 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +463,7 @@
 				TargetAttributes = {
 					52C505AB23FEED9F00265F48 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					52C505C423FEEDA000265F48 = {
 						CreatedOnToolsVersion = 11.3;
@@ -632,9 +654,12 @@
 				52C5063623FF047100265F48 /* ListMoviesTableViewCell.swift in Sources */,
 				52C505B023FEED9F00265F48 /* AppDelegate.swift in Sources */,
 				52C5062123FEFD5400265F48 /* ListMoviesContract.swift in Sources */,
+				52C5064C23FFC0D200265F48 /* UIImageview+Extension.swift in Sources */,
+				52C5064523FF906000265F48 /* UIScrollView+InfiniteScroll.m in Sources */,
 				52C5061323FEF9D900265F48 /* APIConfiguration.swift in Sources */,
 				52C5063123FEFD9300265F48 /* ListMoviesViewController.swift in Sources */,
 				52C505B223FEED9F00265F48 /* SceneDelegate.swift in Sources */,
+				52C5064723FF90D500265F48 /* CustomInfiniteIndicator.swift in Sources */,
 				52C5062923FEFD7200265F48 /* ListMoviesInteractor.swift in Sources */,
 				52C5060A23FEF8F300265F48 /* Movies.swift in Sources */,
 				52C5060623FEF83F00265F48 /* Constant.swift in Sources */,
@@ -843,6 +868,7 @@
 			baseConfigurationReference = 16B9F0A295356D0A423A6010 /* Pods-TheMovieDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GUPW3X9J7W;
 				INFOPLIST_FILE = TheMovieDB/Applications/Info.plist;
@@ -852,6 +878,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.TheMovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheMovieDB/Extension/TableView/TheMovieDB-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -862,6 +890,7 @@
 			baseConfigurationReference = 3DADD2B058CABB54C672FB27 /* Pods-TheMovieDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GUPW3X9J7W;
 				INFOPLIST_FILE = TheMovieDB/Applications/Info.plist;
@@ -871,6 +900,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahmad.TheMovieDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TheMovieDB/Extension/TableView/TheMovieDB-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

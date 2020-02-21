@@ -74,6 +74,7 @@
                                                         <constraint firstItem="c8q-kL-Ctz" firstAttribute="top" secondItem="uwS-vd-uuh" secondAttribute="top" id="Q74-Ht-FQa"/>
                                                         <constraint firstItem="zQ8-ub-eYq" firstAttribute="leading" secondItem="Lmb-y9-5U6" secondAttribute="leading" id="R1S-JH-3Uw"/>
                                                         <constraint firstItem="Lmb-y9-5U6" firstAttribute="leading" secondItem="c8q-kL-Ctz" secondAttribute="trailing" constant="8" id="Vos-gX-ixl"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fhu-Fe-WKB" secondAttribute="bottom" constant="10" id="ZCH-0t-MiA"/>
                                                         <constraint firstItem="fhu-Fe-WKB" firstAttribute="leading" secondItem="c8q-kL-Ctz" secondAttribute="trailing" constant="8" id="bg8-mB-65k"/>
                                                         <constraint firstAttribute="bottom" secondItem="c8q-kL-Ctz" secondAttribute="bottom" id="fUn-VD-Uha"/>
                                                         <constraint firstItem="fhu-Fe-WKB" firstAttribute="top" secondItem="zQ8-ub-eYq" secondAttribute="bottom" constant="7.5" id="lD4-oV-Nrf"/>
@@ -144,12 +145,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lqJ-39-OiL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8jx-Yg-fSW"/>
+                            <constraint firstItem="lqJ-39-OiL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="009-5a-Yur"/>
                             <constraint firstItem="fZi-Ow-oUN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ckh-qf-lgj"/>
                             <constraint firstItem="fZi-Ow-oUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KSf-eo-Zyg"/>
-                            <constraint firstItem="lqJ-39-OiL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kHd-3H-9OR"/>
-                            <constraint firstItem="fZi-Ow-oUN" firstAttribute="top" secondItem="lqJ-39-OiL" secondAttribute="bottom" id="mlp-bb-3WO"/>
-                            <constraint firstItem="lqJ-39-OiL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xGb-aQ-ysq"/>
+                            <constraint firstItem="lqJ-39-OiL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cRv-Ii-GAi"/>
+                            <constraint firstItem="lqJ-39-OiL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kb9-LX-WhI"/>
+                            <constraint firstItem="fZi-Ow-oUN" firstAttribute="top" secondItem="lqJ-39-OiL" secondAttribute="bottom" id="ukD-po-EdW"/>
                             <constraint firstItem="fZi-Ow-oUN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zxV-LY-4iE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
